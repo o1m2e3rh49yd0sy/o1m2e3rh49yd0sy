@@ -1048,12 +1048,12 @@ end
 if text == 'تحديث السورس ❃' and DevBOYKAW(msg) then 
 os.execute('rm -rf BOYKA.lua')
 os.execute('wget https://raw.githubusercontent.com/BOYKATEAM/BOYKA/master/BOYKA.lua')
-send(msg.chat_id_, msg.id_,' ❃∫ تم تحديث السورس \n ❃∫ لديك اخر اصدار لسورس بويكا\n ❃∫ الاصدار » { 1.3v}')
+send(msg.chat_id_, msg.id_,' ❃∫ تم تحديث السورس \n ❃∫ لديك اخر اصدار لسورس سـلـطـان\n ❃∫ الاصدار » { 1.3v}')
 dofile('BOYKA.lua')  
 end
 if text == 'الاصدار ❃' and DevBOYKAW(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ❃∫ اصدار سورس بويكا \n ❃∫ الاصدار »{ 1.3v}')
+send(msg.chat_id_, msg.id_,' ❃∫ اصدار سورس سـلـطـان \n ❃∫ الاصدار »{ 1.3v}')
 end
 if text == 'قناه تحديثات البوت ❃' and DevBOYKAW(msg) then 
 database:del(bot_id..'Srt:Bot') 
@@ -2299,7 +2299,7 @@ return false
 end
 os.execute('rm -rf BOYKA.lua')
 os.execute('wget https://raw.githubusercontent.com/BOYKATEAM/BOYKA/master/BOYKA.lua')
-send(msg.chat_id_, msg.id_,' ❃∫ تم تحديث السورس \n ❃∫ لديك اخر اصدار لسورس بويكا\n ❃∫ الاصدار » { 1.3v}')
+send(msg.chat_id_, msg.id_,' ❃∫ تم تحديث السورس \n ❃∫ لديك اخر اصدار لسورس سـلـطـان\n ❃∫ الاصدار » { 1.3v}')
 dofile('BOYKA.lua')  
 end
 
@@ -2583,7 +2583,7 @@ if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
 Text = [[
   ⦑ Welcome to Source ⦒ 
  
-  ↬ .BOYKA TEAM  
+  ↬ .Sultan Team
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
   ↬ . [Channel](t.me/d6yyt)  
   
@@ -3843,7 +3843,7 @@ end,nil)
 end
 end
 if text == 'الملفات' and DevBOYKAW(msg) then
-t = ' ❃∫ ملفات السورس بويكا ↓\n≪━━━━━━𝘽𝙆━━━━━━≫ \n'
+t = ' ❃∫ ملفات السورس سـلـطـان ↓\n≪━━━━━━𝘽𝙆━━━━━━≫ \n'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
 if v:match(".lua$") then
@@ -3860,8 +3860,8 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n ❃∫ اهلا بك في متجر ملفات بويكا\n ❃∫ ملفات السورس ↓\n≪━━━━━━𝘽𝙆━━━━━━≫\n\n"
-local TextE = "\n≪━━━━━━𝘽𝙆━━━━━━≫\n ❃∫ علامة تعني { ✓ } ملف مفعل\n ❃∫ علامة تعني { ✘ } ملف معطل\n ❃∫ قناة سورس بويكا ↓\n".." ❃∫ [اضغط هنا لدخول](t.me/d6yyt) \n"
+local TextS = "\n ❃∫ اهلا بك في متجر ملفات سـلـطـان\n ❃∫ ملفات السورس ↓\n≪━━━━━━𝘽𝙆━━━━━━≫\n\n"
+local TextE = "\n≪━━━━━━𝘽𝙆━━━━━━≫\n ❃∫ علامة تعني { ✓ } ملف مفعل\n ❃∫ علامة تعني { ✘ } ملف معطل\n ❃∫ قناة سورس سـلـطـان ↓\n".." ❃∫ [اضغط هنا لدخول](t.me/d6yyt) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
 local Check_File_is_Found = io.open("File_Bot/"..name,"r")
@@ -3899,7 +3899,7 @@ os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
 dofile('BOYKA.lua')  
 else
-send(msg.chat_id_, msg.id_," ❃∫ عذرا الملف لايدعم سورس بويكا \n") 
+send(msg.chat_id_, msg.id_," ❃∫ عذرا الملف لايدعم سورس سـلـطـان \n") 
 end
 return false
 end
@@ -3921,7 +3921,7 @@ chek:close()
 send(msg.chat_id_, msg.id_,t) 
 dofile('BOYKA.lua')  
 else
-send(msg.chat_id_, msg.id_," ❃∫ عذرا الملف لايدعم سورس بويكا \n") 
+send(msg.chat_id_, msg.id_," ❃∫ عذرا الملف لايدعم سورس سـلـطـان \n") 
 end
 return false
 end
@@ -8726,8 +8726,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'بويكا').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'سـلـطـان').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'سـلـطـان')
 local BOYKA_Msg = {
 'عمغي 🥺💕.',
 'هاا شتريد كافي ☹️.',
@@ -9327,7 +9327,7 @@ end
 end
 end
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'بويكا').." غادر" or text == 'غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'سـلـطـان').." غادر" or text == 'غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,'❃∫ تم مغادرة المجموعه') 
@@ -9336,7 +9336,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+Namebot = (database:get(bot_id..'Name:Bot') or 'سـلـطـان')
 send(msg.chat_id_, msg.id_,'اسمي ['..Namebot..'] ')
 end
 if text == 'الاحصائيات' then
@@ -9814,7 +9814,7 @@ local List = {
 ゠𝚄𝚂𝙴𝚁 𖨈 #username 𖥲 .
 ゠𝙼𝚂𝙶 𖨈 #msgs 𖥲 .
 ゠𝚂𝚃𝙰 𖨈 #stast 𖥲 .
-゠??𝙳 𖨈 #id 𖥲 .
+゠𝙸𝙳 𖨈 #id 𖥲 .
 ]],
 [[
 ➭- 𝒔𝒕𝒂𓂅 #stast 𓍯. 💕
@@ -10710,7 +10710,7 @@ if (text and text == "تفعيل اوامر التحشيش") then
 send(msg.chat_id_, msg.id_, '  ❃∫ تم تفعيل اوامر التحشيش')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'سـلـطـان')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
